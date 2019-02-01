@@ -1,19 +1,10 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import HomeScreen from './HomeScreen'
-import ProfileScreen from './ProfileScreen'
+import React, { Component } from 'react';
+import IosNavigator from "./iosNavigator";
 
-const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
-  Profile: {screen: ProfileScreen},
-});
-
-const App = createAppContainer(MainNavigator);
-export default App;
-
-// export default class App extends React.Component {
-//   render() {
-//     return (
-//       <AppNavigator />
-//     );
-//   }
-// }
+export default class App extends React.Component {
+  render() {
+    return (
+      <IosNavigator />
+    );
+  }
+}

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import IosNavigator from "./iosNavigator";
+import Animation from "./Animation";
 
 export default class App extends React.Component {
   render() {
     return (
-      <IosNavigator />
+      <Animation />
     );
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, Button, TextInput } from 'react-native'
 import { connect } from 'react-redux'
-import { setName, deleteName } from '../redux'
-import { store } from '../redux'
+import { setName, deleteName } from '../store/actions/user'
+import { store } from '../store/index'
 
 class App extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import Expo from 'expo';
 import React, { Component } from 'react';
-import { store } from './redux'
+import { store } from './store/index'
 import { Provider } from 'react-redux'
 import App from "./space/App";
 

@@ -13,15 +13,11 @@ class App extends React.Component {
     return (
       <View>
         <View style={{backgroundColor: 'gray', height: 40}}/>
-        <ScrollView>
+        <View>
           <View style={{
             backgroundColor: 'gray',
             width: '100%',
             height: 50,
-            flex: 1,
-            flexDirection: 'row',
-            justifyContent:'space-between',
-            alignItems: 'center',
             paddingLeft: 20,
             paddingRight: 20,
           }}>
@@ -32,7 +28,8 @@ class App extends React.Component {
             />
           </View>
           { this.layout() }
-        </ScrollView>
+          <View style={{backgroundColor: 'gray', height: 40}}/>
+        </View>
       </View>
     );
   }
